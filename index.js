@@ -11,7 +11,7 @@ servidor.use(cors());
 
 servidor.use(json()); //cualquier cosa que venga con json será interceptada
 
-servidor.use("/mentirillas", express.static("./pruebas"));
+//servidor.use("/mentirillas", express.static("./pruebas")); //esta es solamente una línea para realizar pruebas
 //si escribo /mentirillas, pasa,devuelve, ./pruebas
 
 servidor.get("/colores", async (peticion, respuesta) => {
